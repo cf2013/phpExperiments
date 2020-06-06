@@ -1,57 +1,319 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/images/lang-logo.png">
-    </a>
-    <h1>Getting Started with PHP on Heroku</h1>
-    <p>This is a sample PHP application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-php"><span class="glyphicon glyphicon-flash"></span> Getting Started with PHP</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/php-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
 <div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-php" class="alert-link">Getting Started with PHP on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/php-getting-started">Heroku Button</a> on the repository.</li>
+            <!-- banner-text -->
+            <div class="banner-text">
+				<img src="assets/imgs/dreamEnglish_checkpoint.png" alt="logo" srcset="" id="logoDreamBanner">
+                <div class="slider-info">
+                    <h3>Te ayudamos a alcanzar tus sueños </h3>
+				</div>
+            </div>
+			<div class="banner-top pb-5">
+                <div class="row slider-bottom">
+                    <div class="col-md-3 slider-bottom-lft">
+						<h4>¿Te interesa saber más?</h4>
+						<p class="text-white mt-2">Déjanos tu correo y nosotros te contactamos </p>
+					</div>
+					 <div class="col-md-9 n-right-w3ls">
+						<div class="row">
+							<div class="col-md-4 form-group news-rt">
+								<input class="form-control" type="text" name="Name" placeholder="Nombre" required="">
+							</div>
+							<div class="col-md-4 form-group news-lt">
+								<input class="form-control" type="email" name="Email" placeholder=" Email" required="">
+							</div>
+							<div class="col-md-4 form-group news-last">
+								<div class="sbm-it">
+									<div class="form-group">
+										<input class="form-control submit text-uppercase" type="submit" value="Enviar">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+     <!-- //banner-text -->
+     <section class="about-w3ls py-5">
+		<div class="container pt-xl-5 pb-lg-3">
+			<div class="row">
+				<div class="col-lg-5">
+					<img src="assets/imgs/laptop-women-kitchen.jpg" alt="" class="img-section4 img-fluid">
+				</div>
+				<div class="col-lg-7 section-4">
+					<div class="agil_mor">
+						<h2 class="heading-agileinfo">We are as unique <span>as you are</span></h2>
+						<p class="vam">Somos la primer escuela de inglés que ha trasladado cursos presenciales a remotos sin perder ninguna cualidad, entendemos la tendencia, aprovechamos la tecnología y te entrenamos para el éxito. </p>
+						<a href="about.html" class="mt-3">Lee más...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-w3ls py-5 bg-info">
+		<div class="container pt-xl-5 pb-lg-3">
+			<div class="row">
+				<div class="col-lg-7 section-5">
+					<div class="agil_mor">
+						<h3 class="heading-agileinfo">We believe<span class="text-light"> the teacher is key</span></h3>
+						<p class="vam">Un buen maestro hace la diferencia, nosotros tenemos a los mejores, con décadas de pasión y experiencia. </p>
+						<a href="about.html" class="mt-3 text-light">Lee más...</a>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<img src="assets/imgs/man-rolling-chair.jpg" alt="" class="img-section4 img-fluid" >
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="about-w3ls py-5">
+		<div class="container pt-xl-5 pb-lg-3">
+			<div class="row">
+				<div class="col-lg-5">
+					<img src="assets/imgs/man-laptop.jpg" alt="" class="img-section4 img-fluid">
+				</div>
+				<div class="col-lg-7 section-4">
+					<div class="agil_mor">
+						<h2 class="heading-agileinfo"> Nuestros cursos de <span>avance rápido </span></h2>
+						<p class="vam"> Constan de 17 días hábiles de lunes a viernes con 80 minutos de clase + 15 a 20 minutos de trabajo individual. </p>
+						<a href="about.html" class="mt-3">Lee más...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 <!-- services -->
+    <div class="more-services py-lg-5">
+		<div class="container py-5">
+            <div class="title-section pb-sm-5 pb-3">
+               <h3 class="heading-agileinfo text-center pb-4 bg-info text-light">Nuestros cursos incluyen:</h3>
+            </div>
+            <div class="row grid">
+                <div class="col-lg-3 col-12 more-services-1">
+                    <figure class="effect-1" style="height:100%;">
+                        <img src="assets/imgs/cellphone-man.jpg" alt="img" class="img-fluid" style="height:15rem;" />
+                        <h4>LLamada sorpresa</h4>
+                        <p> Durante tu nivel, tienes la opción de elegir llamada sorpresa, lo que significa que en un momento no programado, recibirás una llamada telefónica, misma que tendrás que contestar en inglés en el lugar que te encuentres y entablar conversación con el llamante. Esto ayudará a mejorar tus habilidades de escuchar y resolver problemas en el idioma.</p>
+					</figure>
+				 </div>
+                <div class="col-lg-3 col-12 more-services-1">
+                    <figure class="effect-1" style="height:100%;">
+                        <img src="assets/imgs/lectura-mujer.jpg" alt="img" class="img-fluid" style="height:15rem;"/>
+                       <h4>Club de lectura</h4>
+                        <p>En el club de lectura los alumnos se reúnen de forma voluntaria una vez a la semana para compartir 5 palabras o frases nuevas que hayan aprendido, así como también narrar el contenido de sus lecturas, las cuales serán elegidas por ellos mismos basadas en sus intereses personales.</p>
+					</figure>
+                </div>
 
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/php-getting-started/blob/master/composer.json">composer.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/php-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd php-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-php#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-php">Deploying PHP Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
+                <div class="col-lg-3 col-12 more-services-1">
+                    <figure class="effect-1"style="height:100%;">
+                        <img src="assets/imgs/freelancer-at-home.jpg" alt="img" class="img-fluid" style="height:15rem;"/>
+                       <h4>Pláticas</h4>
+                      <p>Podrás entrar a videoconferencias en vivo con personas de alrededor del mundo contando las experiencias y aventuras que han tenido gracias al idioma.</p>
+					</figure>
+                </div>
+                <div class="col-lg-3 col-12 more-services-1">
+                    <figure class="effect-1" style="height:100%;">
+                        <img src="assets/imgs/mail-formal.jpg" alt="img" class="img-fluid" style="height:15rem;"/>
+                        <h4>Email formal</h4>
+						<p>Adicional a tu curso tienes la oportunidad de practicar y recibir retroalimentación sobre como escribir y contestar a correos electrónicos de trabajo. </p>
+					</figure>
+                </div>
+            </div>
+        </div>
+	</div>
+	<section class="about-w3ls py-5">
+		<div class="container pt-xl-5 pb-lg-3">
+			<div class="row">
+				<div class="col-lg-5">
+					<img src="assets/imgs/elzoom.jpg" alt="" class="img-section4 img-fluid">
+				</div>
+				<div class="col-lg-7 section-4">
+					<div class="agil_mor">
+						<h2 class="heading-agileinfo">Integrate <span>a nuestro club de conversación</span></h2>
+						<p class="vam">Otra opción para ti si ya sabes inglés y lo que quieres es no olvidarlo, puedes integrarte a nuestro club de conversación. 1 hora diaria disponible de lunes a viernes. Puedes contratarlo por semana, quincena o por hora con un maestro de tu elección.</p>
+						<a href="about.html" class="mt-3">Lee más...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- //services -->
+	<!-- testimonials -->
+	<div class="testimonials py-lg-5">
+		<div class="container py-5 formaRemota">
+			 <div class="title-section pb-sm-5 pb-3">
+               <h3 class="heading-agileinfo text-center pb-4">¿Por qué <span> estudiar de forma remota?</span></h3>
+            </div>
+			<div class="mis-stage">
+				<!-- The element to select and apply miSlider to - the class is optional -->
+				<div class="row mis-slider">
+					<!-- The slider element - the class is optional -->
+					<div class="col-lg-3 col-6 mis-slide mb-4">
+						<h6>Ahorras tiempo y dinero en traslados.</h6>
+					</div>
+					<div class="col-lg-3 col-6 mis-slide mb-4">
+						<h6>Es ideal si vives en áreas distantes a las ciudades o no puedes trasladarte a ellas. </h6>
+					</div>
+					<div class="col-lg-3 col-6 mis-slide mb-4">
+						<h6>Es perfecto si tu día es muy ocupado y no dispones de tanto tiempo pero necesitas aprender o practicar el idioma.</h6>
+					</div>
+					<div class="col-lg-3 col-6 mis-slide mb-4">
+						<h6>Es la tendencia, las empresas se estan dando cuenta de que sus empleados trabajan igual o mejor de manera remota. </h6>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //testimonials -->
+<!-- video and events -->
+	<div class="video-choose-agile py-lg-5">
+		<div class="container py-5">
+			<div class="title-section pb-sm-5 pb-3">
+				<h3 class="heading-agileinfo text-center pb-4">Próximos <span>cursos</span></h3>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 events">
+					<div class="events-w3ls">
+						<div class="d-flex">
+							<div class="col-sm-2 col-3 events-up p-2 text-center">
+								<h5 class="font-weight-bold">29
+									<span class="border-top font-weight-light pt-2 mt-2">Jun</span>
+								</h5>
+							</div>
+							<div class="col-sm-10 col-9 events-right">
+								<h4 class="Cur">Curso nivel básico </h4>
+								<ul class="list-unstyled">
+									<li class="my-2">2.00 pm</li>
+									<li class="my-2">4.00 pm</li>
+									<li class="my-2">7.00 pm</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex my-4">
+						<div class="col-sm-2 col-3 events-up p-2 text-center">
+							<h5 class="font-weight-bold">17
+								<span class="border-top font-weight-light pt-2 mt-2">Jul</span>
+							</h5>
+						</div>
+						<div class="col-sm-10 col-9 events-right">
+							<h4 class="Cur">Curso avanzado adultos </h4>
+							<ul class="list-unstyled">
+								<li class="my-2">2.00 pm</li>
+								<li class="my-2">4.00 pm</li>
+								<li class="my-2">7.00 pm</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<ul class="list-unstyled">
+						<li class="my-2"><h4 class="Cur"> Costos </h4></li>
+						<li class="my-2"><h4 class="Cur"> Cursos regulares de avance rapido: </h4></li>
+						<li class="my-2">17 días hábiles de lunes a viernes: $1,200</li>
+						<li class="my-2"><h4 class="Cur"> Club de conversación:  </h4></li>
+						<li class="my-2">1 hora diaria de lunes a viernes: semanal $500 o quincenal: $850</li>
+						<li class="my-2">Bajo demanda con maestro de tu elección: $150</li>
+						<li class="my-2"><br></li>
+						<li class="my-2">Todas las caracteristicas de inmersión: como llamada sorpresa semanal,<br>
+							club de lectura y correos corporativos no tienen costo pero influyen en tu calificación.<br>
+							¡Acepta el reto hoy!</li>
+					</ul>
+				</div>
+				<div class="col-lg-7 video">
+					<img src="images/g1.jpg" class="img-fluid" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //video and events -->
+<!--footer-->
+	<footer>
+		<div class="container py-md-4 mt-md-3">
+			<div class="row footer-top-w3layouts-agile py-5">
+				<div class="col-md-4 footer-grid">
+					<div class="footer-title">
+						<h3>Acerca de nosotros</h3>
+					</div>
+					<div class="footer-text">
+						<p>Profesores capacitados y con experiencia en el campo de la enseñanza del idioma inglés como una segunda lengua</p>
+					</div>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<div class="footer-title">
+						<h3>Contactanos</h3>
+					</div>
+					<div class="contact-info">
+					<h4>Localización :</h4>
+					<p>Guadalajara, Jalisco.</p>
+					<div class="phone">
+						<h4>Teléfono :</h4>
+						<p>Tel: 44-26-77-80-33</p>
+						<p>Email : <a href="dream.english.contact@gmail.com">dream.english.contact@gmail.com</a></p>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<div class="footer-title">
+						<h3>Servicios</h3>
+					</div>
+					<div class="footer-list">
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="assets/imgs/services1.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="assets/imgs/services2.jpg" class="img-fluid" alt=" ">
+							</a>
+                        </div>
+                        <div class="flickr-grid">
+							<a href="services.html">
+								<img src="assets/imgs/services3.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!---->
+	<div class="copyright py-3">
+		<div class="container">
+			<div class="copyrighttop">
+				<ul>
+					<li>
+						<h4>Síguenos en:</h4>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/DreamEnglish-111482483925431/">
+							<img src="assets/imgs/facebook-logo.png" alt="facebook Logo" srcset=""class="logoFooter">
+						</a>
+					</li>
+					<li>
+						<a href="www.twitter.com">
+							<img src="assets/imgs/twitter-icon.png" alt="twitter logo" srcset=""class="logoFooter">
+						</a>
+					</li>
+					<li>
+						<a href="www.instagram.com">
+							<img src="assets/imgs/instagram-logo.png" alt="instagram logo" srcset=""class="logoFooter">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+<!-- //footer -->
 
 {% endblock %}
