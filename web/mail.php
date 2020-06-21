@@ -1,13 +1,13 @@
 <?php
 // If you are using Composer
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 // If you are not using Composer (recommended)
 // require("path/to/sendgrid-php/sendgrid-php.php");
 
 $from = new SendGrid\Email(null, "dream.english.contact@gmail.com");
 $subject = "Hello World from the SendGrid PHP Library!";
-$to = new SendGrid\Email(null, "carlosfrancisco.rg@gmail.com");
+$to = new SendGrid\Email(null, $_POST["email"]);
 $content = new SendGrid\Content("text/plain", "Hello, Email!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
