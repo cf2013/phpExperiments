@@ -36,12 +36,12 @@
 					</div>
 					 <div class="col-md-9 n-right-w3ls">
 						<div class="row">
-							
-							<div class="col-md-4 form-group news-rt" action="views/mail.php" method="post">
-								<input class="form-control" type="text" name="Name" placeholder="Nombre" required="">
+							<form action="views/mail.php" method="post">	
+							<div class="col-md-4 form-group news-rt">
+								<input class="form-control" type="text" name="name" placeholder="Nombre" required="">
 							</div>
 							<div class="col-md-4 form-group news-lt">
-								<input class="form-control" type="email" name="Email" placeholder=" Email" required="">
+								<input class="form-control" type="email" name="email" placeholder=" Email" required="">
 							</div>
 							<div class="col-md-4 form-group news-last">
 								<div class="sbm-it">
@@ -50,11 +50,7 @@
 									</div>
 								</div>
 							</div>	
-							
-						<form action="views/mail.php" method="post">
-						Name: <input type="text" name="name"><br>
-						E-mail: <input type="text" name="email"><br>
-						<input type="submit">
+							</form>
 						</form>
 						</div>
 					</div>
