@@ -34,28 +34,6 @@
 						<h4>¿Te interesa saber más?</h4>
 						<p class="text-white mt-2">Déjanos tu correo y nosotros te contactamos </p>
 					</div>
-					<?php
-						if(isset($_REQUEST['submit_btn']))
-						{
-							<script>
-							Swal.fire('Su mensaje fue enviado','','success');
-							</script>
-							<?php
-								// If you are using Composer
-								require '../../vendor/autoload.php';
-								// If you are not using Composer (recommended)
-								// require("path/to/sendgrid-php/sendgrid-php.php");
-								$from = new SendGrid\Email(null, "dream.english.contact@gmail.com");
-								$subject = "Hello World from the SendGrid PHP Library!";
-								$to = new SendGrid\Email(null, $_GET["email"]);
-								$content = new SendGrid\Content("text/plain", "Hello, Email!");
-								$mail = new SendGrid\Mail($from, $subject, $to, $content);
-								$apiKey = getenv('SENDGRID_API_KEY');
-								$sg = new \SendGrid($apiKey);
-								$response = $sg->client->mail()->send()->post($mail);
-							?>
-						}
-					?>
 					 <div class="col-md-9 n-right-w3ls">
 							<form class="row" action="" method="get">	
 							<div class="col-md-4 form-group news-rt">
@@ -67,12 +45,11 @@
 							<div class="col-md-4 form-group news-last">
 								<div class="sbm-it">
 									<div class="form-group">
-										<input class="form-control submit text-uppercase" type="submit" value="Enviar" name="submit_btn" onclick="Swal.fire('Su mensaje fue enviado','','success');">
+										<input class="form-control submit text-uppercase" type="submit" value="Enviar" name="submit_btn" onclick="Swal.fire('Llama ahora: 332 537 8016','','success');">
 									</div>
 								</div>
 							</div>	
 							</form>
-						
 						</div>
 					</div>
 				</div>
